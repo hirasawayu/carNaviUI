@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>S1.qml</file>
+        <file>CButton1.qml</file>
+        <file>CBackButton.qml</file>
+        <file>ScreenProperty.qml</file>
+    </qresource>
+</RCC>
