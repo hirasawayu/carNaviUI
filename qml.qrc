@@ -4,6 +4,12 @@
         <file>S1.qml</file>
         <file>CButton1.qml</file>
         <file>CBackButton.qml</file>
-        <file>ScreenProperty.qml</file>
+        <file>PScreen1Property.qml</file>
+        <file>CTitleText1.qml</file>
+        <file>PCommonProperty.qml</file>
+        <file>CButton2.qml</file>
+        <file>CButton2Selected.qml</file>
+        <file>S11.qml</file>
+        <file>PButtonProperty.qml</file>
     </qresource>
 </RCC>
