@@ -1,17 +1,9 @@
 import QtQuick 2.15
 
-//S2用
+//6つのメインボタンがある画面のボタン座標
 Item {
 
-    //CButton2.qmlの座標
-    property int cButton2X1: 30
-    property int cButton2Y1: 320
-    property int cButton2X2: 190
-    property int cButton2Y2: 320
-    property int cButton2X3: 350
-    property int cButton2Y3: 320
-
-    //CButtonBasic.qmlの座標
+    //CButton3.qmlの座標
     property int cButton3X1: 20
     property int cButton3Y1: 70
     property int cButton3X2: 240

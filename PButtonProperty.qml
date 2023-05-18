@@ -7,5 +7,6 @@ Item {
     property string texts: "←戻る"
     property string textColor: "white"
     property string pressedColor: "orange"
+    property int fontSize: 30
 
 }

@@ -16,6 +16,7 @@ Rectangle {
     property string texts;
     property string textColor;
     property string pressedColor;
+    property string fontSize;
 
     Loader {
         id: buttonProperty
@@ -26,26 +27,26 @@ Rectangle {
             borderColor = buttonProperty.item.borderColor
             textColor = buttonProperty.item.textColor
             pressedColor = buttonProperty.item.pressedColor
-
+            fontSize = buttonProperty.item.fontSize
         }
     }
 
 
 
     Text {
-        text: parent.texts
+        text: texts
         anchors.fill: parent
         color: textColor
-        font.pixelSize: 30
+        font.pixelSize: fontSize
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
     }
 
     MouseArea {
         anchors.fill: parent
-        onClicked: screenLoader.source = parent.fileName
-        onPressed: cButton3.color = pressedColor
-        onExited: cButton3.color = baseColor
+        onClicked: screenLoader.source = fileName
+        onPressed: parent.color = pressedColor
+        onExited: parent.color = baseColor
     }
 }
 

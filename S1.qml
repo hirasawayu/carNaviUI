@@ -9,6 +9,7 @@ Rectangle {
     property int titleTextY;
     property int backButtonX;
     property int backButtonY;
+
     property int cButton2X1;
     property int cButton2Y1;
     property int cButton2X2;
@@ -37,18 +38,24 @@ Rectangle {
 
         onLoaded: {
 
-            cButton2X1 = screen1Property.item.cButton2X1
-            cButton2Y1 = screen1Property.item.cButton2Y1
-            cButton2X2 = screen1Property.item.cButton2X2
-            cButton2Y2 = screen1Property.item.cButton2Y2
-            cButton2X3 = screen1Property.item.cButton2X3
-            cButton2Y3 = screen1Property.item.cButton2Y3
+
 
         }
     }
 
+    Loader {
+        id: screenSubButtonProperty
+        source: "PScreenSubButtonProperty.qml"
 
-
+        onLoaded: {
+            cButton2X1 = screenSubButtonProperty.item.cButton2X1
+            cButton2Y1 = screenSubButtonProperty.item.cButton2Y1
+            cButton2X2 = screenSubButtonProperty.item.cButton2X2
+            cButton2Y2 = screenSubButtonProperty.item.cButton2Y2
+            cButton2X3 = screenSubButtonProperty.item.cButton2X3
+            cButton2Y3 = screenSubButtonProperty.item.cButton2Y3
+        }
+    }
 
     Loader {
         id: s1TitleText
@@ -57,7 +64,7 @@ Rectangle {
         y: titleTextY
 
         onLoaded: {
-            item.titleText = "ナビゲーション"
+            item.texts = "ナビゲーション"
         }
     }
 
@@ -89,7 +96,7 @@ Rectangle {
         onLoaded: {
             item.texts = "最寄"
             item.fileName = "S12.qml"
-            item.borderColor = "blue"
+            item.borderColor = "purple"
             item.imageSource = "location.jpg"
         }
 
@@ -114,7 +121,6 @@ Rectangle {
     }
 
     Rectangle {
-        id: line
         x: 0
         y: 300
         width: 700

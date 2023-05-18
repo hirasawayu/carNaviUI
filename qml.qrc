@@ -18,8 +18,15 @@
         <file>S0.qml</file>
         <file>map.png</file>
         <file>S2.qml</file>
-        <file>PScreen2Property.qml</file>
+        <file>PScreenWith6ButtonProperty.qml</file>
         <file>CButton3.qml</file>
         <file>S3.qml</file>
+        <file>CButton4.qml</file>
+        <file>PScreenWith8ButtonProperty.qml</file>
+        <file>PScreenSubButtonProperty.qml</file>
+        <file>S12.qml</file>
+        <file>CButton5.qml</file>
+        <file>CButton6.qml</file>
+        <file>S13.qml</file>
     </qresource>
 </RCC>

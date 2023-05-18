@@ -35,7 +35,7 @@ Rectangle {
         text: texts
         anchors.fill: parent
         color: textColor
-        font.pixelSize: 30
+        font.pixelSize: 25
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
     }
@@ -43,8 +43,8 @@ Rectangle {
     MouseArea {
         anchors.fill: parent
         onClicked: screenLoader.source = fileName
-        onPressed: cButton2.color = pressedColor
-        onExited: cButton2.color = baseColor
+        onPressed: parent.color = pressedColor
+        onExited: parent.color = baseColor
     }
 
 }

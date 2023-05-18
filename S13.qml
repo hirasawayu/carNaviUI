@@ -12,10 +12,6 @@ Rectangle {
 
     property int cButton2X1;
     property int cButton2Y1;
-    property int cButton2X2;
-    property int cButton2Y2;
-    property int cButton2X3;
-    property int cButton2Y3;
 
     property int cButton3X1;
     property int cButton3Y1;
@@ -29,8 +25,6 @@ Rectangle {
     property int cButton3Y5;
     property int cButton3X6;
     property int cButton3Y6;
-
-
 
     Loader {
         id: commonProperty
@@ -73,164 +67,124 @@ Rectangle {
         onLoaded: {
             cButton2X1 = screenSubButtonProperty.item.cButton2X1
             cButton2Y1 = screenSubButtonProperty.item.cButton2Y1
-            cButton2X2 = screenSubButtonProperty.item.cButton2X2
-            cButton2Y2 = screenSubButtonProperty.item.cButton2Y2
-            cButton2X3 = screenSubButtonProperty.item.cButton2X3
-            cButton2Y3 = screenSubButtonProperty.item.cButton2Y3
         }
     }
 
-
     Loader {
-        id: s2TitleText
+        id: s13TitleText
         source: "CTitleText1.qml"
         x: titleTextX
         y: titleTextY
 
         onLoaded: {
-            item.texts = "アプリケーション"
+            item.texts = "自宅/お気に入り"
+            item.baseColor = "orange"
         }
     }
 
-    //write
-
     Loader {
-        id: s21button
+        id: toS132Button1
         source: "CButton3.qml"
         x: cButton3X1
         y: cButton3Y1
 
         onLoaded: {
-            item.texts = "音楽"
-            item.fileName = "S21.qml"
+            item.texts = "自宅"
+            item.fileName = "S132.qml"
         }
     }
 
     Loader {
-        id: s22button
+        id: toS132Button2
         source: "CButton3.qml"
         x: cButton3X2
         y: cButton3Y2
 
         onLoaded: {
-            item.texts = "ビデオ"
-            item.fileName = "S22.qml"
+            item.texts = "ガソリン\nスタンド"
+            item.fileName = "S132.qml"
 
         }
     }
 
     Loader {
-        id: s23button
+        id: toS132Button3
         source: "CButton3.qml"
         x: cButton3X3
         y: cButton3Y3
 
         onLoaded: {
-            item.texts = "写真"
-            item.fileName = "S23.qml"
+            item.texts = "未登録"
+            item.fileName = "S132.qml"
 
         }
     }
 
     Loader {
-        id: s24button
+        id: toS132Button4
         source: "CButton3.qml"
         x: cButton3X4
         y: cButton3Y4
 
         onLoaded: {
-            item.texts = "ワンセグ"
-            item.fileName = "S24.qml"
+            item.texts = "未登録"
+            item.fileName = "S132.qml"
 
         }
     }
 
     Loader {
-        id: s25button
+        id: toS132Button5
         source: "CButton3.qml"
         x: cButton3X5
         y: cButton3Y5
 
         onLoaded: {
-            item.texts = "ハンズフリー"
-            item.fileName = "S25.qml"
+            item.texts = "未登録"
+            item.fileName = "S132.qml"
 
         }
     }
 
     Loader {
-        id: s26button
+        id: toS132Button6
         source: "CButton3.qml"
         x: cButton3X6
         y: cButton3Y6
 
         onLoaded: {
-            item.texts = "ガイドブック"
-            item.fileName = "S26.qml"
+            item.texts = "未登録"
+            item.fileName = "S132.qml"
 
 
         }
     }
 
-
-
-    Rectangle {
-        x: 0
-        y: 300
-        width: 700
-        height: 3
-        border.width: 0
-    }
-
     Loader {
-        source: "CButton2.qml"
+        id: toS131Button
+        source: "CButton5.qml"
         x: cButton2X1
         y: cButton2Y1
 
         onLoaded: {
-            item.texts = "ナビ"
-            item.fileName = "S1.qml"
+            item.texts = "自宅/お気に入り編集"
+            item.fileName = "S131.qml"
         }
     }
 
     Loader {
-        id: selfS2Button
-        source: "CButton2Selected.qml"
-        x: cButton2X2
-        y: cButton2Y2 -30
-
-        onLoaded: {
-            item.texts = "アプリ"
-        }
-    }
-
-    Loader {
-        id: s3Button
-        source: "CButton2.qml"
-        x: cButton2X3
-        y: cButton2Y3
-
-        onLoaded: {
-            item.texts = "設定"
-            item.fileName = "S3.qml"
-        }
-    }
-
-
-    Loader {
-        id: s2backButton
+        id: s13backButton
         source: "CBackButton.qml"
         x: backButtonX
         y: backButtonY
 
         onLoaded: {
-            item.texts = "地図へ戻る"
-            item.fileName = "S0.qml"
+            item.fileName = "S1.qml"
         }
     }
 
 
 
+
+
 }
-
-
