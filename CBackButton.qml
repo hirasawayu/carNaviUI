@@ -14,7 +14,7 @@ Rectangle {
     property string fileName;
     property string baseColor;
     property string borderColor;
-    property string texts;
+    property string texts: "←戻る"
     property string textColor;
     property string pressedColor
 

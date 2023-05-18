@@ -8,19 +8,43 @@ Rectangle {
     height: 90
     radius: 10
     border.width: 3
-    border.color: "white"
-    color: "black"
+    border.color: borderColor
+    color: baseColor
 
-    property string text;
-    property string textColor: "white"
+    property string fileName;
+    property string baseColor;
+    property string borderColor;
+    property string texts;
+    property string textColor;
+    property string pressedColor;
+
+    Loader {
+        id: commonProperty
+        source: "PCommonProperty.qml"
+
+        onLoaded: {
+            baseColor = commonProperty.item.baseColor
+        }
+    }
+
+    Loader {
+        id: buttonProperty
+        source: "PButtonProperty.qml"
+
+        onLoaded: {
+            textColor = buttonProperty.item.textColor
+            borderColor = buttonProperty.item.borderColor
+
+        }
+    }
 
     Text {
         height: 60
-        text: parent.text
+        text: parent.texts
         anchors.left: parent.left
         anchors.right: parent.right
         anchors.bottom: parent.bottom
-        color: parent.textColor
+        color: textColor
         font.pixelSize: 30
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
@@ -28,7 +52,7 @@ Rectangle {
 
     Rectangle {
         height: 30
-        color: "black"
+        color: baseColor
         anchors.left: parent.left
         anchors.right: parent.right
         anchors.top: parent.top
@@ -40,7 +64,7 @@ Rectangle {
 
     Rectangle {
         height: 10
-        color: "black"
+        color: baseColor
         anchors.left: parent.left
         anchors.right: parent.right
         anchors.top: parent.top

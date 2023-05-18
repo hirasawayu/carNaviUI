@@ -14,7 +14,7 @@ Window {
         Loader {
             id: screenLoader
             anchors.fill: parent
-            source: "S1.qml"
+            source: "S0.qml"
         }
 
 

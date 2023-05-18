@@ -7,17 +7,34 @@ Rectangle {
     height: 60
     radius: 10
     border.width: 3
-    border.color: "white"
-    color: "black"
+    border.color: borderColor
+    color: baseColor
 
-    property string text;
-    property string textColor: "white"
     property string fileName;
+    property string baseColor;
+    property string borderColor;
+    property string texts;
+    property string textColor;
+    property string pressedColor;
+
+
+    Loader {
+        id: buttonProperty
+        source: "PButtonProperty.qml"
+
+        onLoaded: {
+            baseColor = buttonProperty.item.baseColor
+            borderColor = buttonProperty.item.borderColor
+            textColor = buttonProperty.item.textColor
+            pressedColor = buttonProperty.item.pressedColor
+
+        }
+    }
 
     Text {
-        text: parent.text
+        text: texts
         anchors.fill: parent
-        color: parent.textColor
+        color: textColor
         font.pixelSize: 30
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
@@ -25,9 +42,9 @@ Rectangle {
 
     MouseArea {
         anchors.fill: parent
-        onClicked: screenLoader.source = parent.fileName
-        onPressed: cButton2.color = "orange"
-        onExited: cButton2.color = "black"
+        onClicked: screenLoader.source = fileName
+        onPressed: cButton2.color = pressedColor
+        onExited: cButton2.color = baseColor
     }
 
 }

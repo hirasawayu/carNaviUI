@@ -11,5 +11,15 @@
         <file>CButton2Selected.qml</file>
         <file>S11.qml</file>
         <file>PButtonProperty.qml</file>
+        <file>flag.jpg</file>
+        <file>home.jpg</file>
+        <file>location.jpg</file>
+        <file>flag.jpg:Zone.Identifier</file>
+        <file>S0.qml</file>
+        <file>map.png</file>
+        <file>S2.qml</file>
+        <file>PScreen2Property.qml</file>
+        <file>CButton3.qml</file>
+        <file>S3.qml</file>
     </qresource>
 </RCC>
