@@ -1,7 +1,7 @@
 import QtQuick 2.15
 
 Rectangle{
-    id: s11Base
+    id: s25Base
     color: baseColor
 
     property string baseColor;
@@ -12,10 +12,6 @@ Rectangle{
 
     property int cButton2X1;
     property int cButton2Y1;
-    property int cButton2X2;
-    property int cButton2Y2;
-    property int cButton2X3;
-    property int cButton2Y3;
 
     property int cButton4X1;
     property int cButton4Y1;
@@ -33,7 +29,6 @@ Rectangle{
     property int cButton4Y7;
     property int cButton4X8;
     property int cButton4Y8;
-
 
     Loader {
         id: commonProperty
@@ -80,169 +75,143 @@ Rectangle{
         onLoaded: {
             cButton2X1 = screenSubButtonProperty.item.cButton2X1
             cButton2Y1 = screenSubButtonProperty.item.cButton2Y1
-            cButton2X2 = screenSubButtonProperty.item.cButton2X2
-            cButton2Y2 = screenSubButtonProperty.item.cButton2Y2
-            cButton2X3 = screenSubButtonProperty.item.cButton2X3
-            cButton2Y3 = screenSubButtonProperty.item.cButton2Y3
         }
     }
 
     Loader {
-        id: s11TitleText
+        id: s25TitleText
         source: "CTitleText1.qml"
         x: titleTextX
         y: titleTextY
 
         onLoaded: {
-            item.texts = "行き先"
-            item.baseColor = "green"
+            item.texts = "ハンズフリー"
+            item.baseColor = "blue"
         }
     }
 
-    //write
-
     Loader {
-        id: toS111Button
+        id: toS251Button
         source: "CButton4.qml"
         x: cButton4X1
         y: cButton4Y1
 
         onLoaded: {
-            item.texts = "住所"
-            item.fileName = "S111.qml"
+            item.texts = "発信履歴"
+            item.fileName = "S251.qml"
         }
     }
 
     Loader {
-        id: toS11Button
+        id: toS252Button
         source: "CButton4.qml"
         x: cButton4X2
         y: cButton4Y2
 
         onLoaded: {
-            item.texts = "電話番号"
-            item.fileName = "S112.qml"
+            item.texts = "着信履歴"
+            item.fileName = "S252.qml"
         }
     }
 
     Loader {
-        id: toS113Button
+        id: toS254Button
         source: "CButton4.qml"
         x: cButton4X3
         y: cButton4Y3
 
         onLoaded: {
-            item.texts = "ガイドブック"
-            item.fileName = "S113.qml"
+            item.texts = "電話帳"
+            item.textOpacity = 0.2
+            item.enabled = false
         }
     }
 
     Loader {
-        id: toS114Button
+        id: toS255Button
         source: "CButton4.qml"
         x: cButton4X4
         y: cButton4Y4
 
         onLoaded: {
-            item.texts = "ジャンル"
-            item.fileName = "S114.qml"
+            item.texts = "番号入力"
+            item.textOpacity = 0.2
+            item.enabled = false
         }
     }
 
     Loader {
-        id: toS115Button
+        id: toS256Button
         source: "CButton4.qml"
         x: cButton4X5
         y: cButton4Y5
 
         onLoaded: {
-            item.texts = "名称"
-            item.fileName = "S115.qml"
+            item.texts = "自宅"
+            item.textOpacity = 0.2
+            item.enabled = false
         }
     }
     Loader {
-        id: toS116Button
+        id: toS257Button
         source: "CButton4.qml"
         x: cButton4X6
         y: cButton4Y6
 
         onLoaded: {
-            item.texts = "マーク"
-            item.fileName = "S116.qml"
+            item.texts = "プリセット１"
+            item.textOpacity = 0.2
+            item.enabled = false
         }
     }
 
     Loader {
-        id: toS117Button
+        id: toS258Button
         source: "CButton4.qml"
         x: cButton4X7
         y: cButton4Y7
 
         onLoaded: {
-            item.texts = "緯度経度"
-            item.fileName = "S117.qml"
+            item.texts = "プリセット２"
+            item.textOpacity = 0.2
+            item.enabled = false
         }
     }
 
     Loader {
-        id: toS118Button
+        id: toS259Button
         source: "CButton4.qml"
         x: cButton4X8
         y: cButton4Y8
 
         onLoaded: {
-            item.texts = "履歴"
-            item.fileName = "S118.qml"
+            item.texts = "プリセット３"
+            item.textOpacity = 0.2
+            item.enabled = false
         }
     }
 
     Loader {
-        id: toS119Button
-        source: "CButton2.qml"
+        id: toS253Button
+        source: "CButton5.qml"
         x: cButton2X1
         y: cButton2Y1
 
         onLoaded: {
-            item.texts = "ルートの編集"
-            item.fileName = "S119.qml"
+            item.texts = "ハンズフリー設定"
+            item.fileName = "S253.qml"
         }
     }
 
     Loader {
-        id: toS11AButton
-        source: "CButton2.qml"
-        x: cButton2X2
-        y: cButton2Y2
-
-        onLoaded: {
-            item.texts = "ルート呼出"
-            item.fileName = "S11A.qml"
-        }
-    }
-
-    Loader {
-        id: toS11BButton
-        source: "CButton2.qml"
-        x: cButton2X3
-        y: cButton2Y3
-
-        onLoaded: {
-            item.texts = "携帯から"
-            item.fileName = "S11B.qml"
-        }
-    }
-
-    Loader {
-        id: s11BackButton
+        id: s25BackButton
         source: "CBackButton.qml"
         x: backButtonX
         y: backButtonY
 
         onLoaded: {
-            item.fileName = "S1.qml"
+            item.fileName = "S2.qml"
         }
     }
-
-
-
 }
+

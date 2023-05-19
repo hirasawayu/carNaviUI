@@ -14,7 +14,6 @@
         <file>flag.jpg</file>
         <file>home.jpg</file>
         <file>location.jpg</file>
-        <file>flag.jpg:Zone.Identifier</file>
         <file>S0.qml</file>
         <file>map.png</file>
         <file>S2.qml</file>
@@ -28,5 +27,11 @@
         <file>CButton5.qml</file>
         <file>CButton6.qml</file>
         <file>S13.qml</file>
+        <file>S21.qml</file>
+        <file>S22.qml</file>
+        <file>S23.qml</file>
+        <file>S24.qml</file>
+        <file>S25.qml</file>
+        <file>S26.qml</file>
     </qresource>
 </RCC>

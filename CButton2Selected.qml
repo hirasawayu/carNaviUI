@@ -17,6 +17,7 @@ Rectangle {
     property string texts;
     property string textColor;
     property string pressedColor;
+    property real textOpacity: 1
 
     Loader {
         id: commonProperty

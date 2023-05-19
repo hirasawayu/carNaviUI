@@ -95,7 +95,7 @@ Rectangle {
     //write
 
     Loader {
-        id: s21button
+        id: toS21Button
         source: "CButton3.qml"
         x: cButton3X1
         y: cButton3Y1
@@ -107,7 +107,7 @@ Rectangle {
     }
 
     Loader {
-        id: s22button
+        id: toS22Button
         source: "CButton3.qml"
         x: cButton3X2
         y: cButton3Y2
@@ -120,7 +120,7 @@ Rectangle {
     }
 
     Loader {
-        id: s23button
+        id: toS23Button
         source: "CButton3.qml"
         x: cButton3X3
         y: cButton3Y3
@@ -133,7 +133,7 @@ Rectangle {
     }
 
     Loader {
-        id: s24button
+        id: toS24Button
         source: "CButton3.qml"
         x: cButton3X4
         y: cButton3Y4
@@ -146,7 +146,7 @@ Rectangle {
     }
 
     Loader {
-        id: s25button
+        id: toS25Button
         source: "CButton3.qml"
         x: cButton3X5
         y: cButton3Y5
@@ -159,7 +159,7 @@ Rectangle {
     }
 
     Loader {
-        id: s26button
+        id: toS26Button
         source: "CButton3.qml"
         x: cButton3X6
         y: cButton3Y6
@@ -183,6 +183,7 @@ Rectangle {
     }
 
     Loader {
+        id: toS1Button
         source: "CButton2.qml"
         x: cButton2X1
         y: cButton2Y1
@@ -205,7 +206,7 @@ Rectangle {
     }
 
     Loader {
-        id: s3Button
+        id: toS3Button
         source: "CButton2.qml"
         x: cButton2X3
         y: cButton2Y3
@@ -218,7 +219,7 @@ Rectangle {
 
 
     Loader {
-        id: s2backButton
+        id: s2BackButton
         source: "CBackButton.qml"
         x: backButtonX
         y: backButtonY

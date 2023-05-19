@@ -70,7 +70,7 @@ Rectangle {
 
 
     Loader {
-        id: s11Button
+        id: toS11Button
         source: "CButton1.qml"
         anchors.topMargin: 90
         anchors.leftMargin: 30
@@ -87,11 +87,11 @@ Rectangle {
     }
 
     Loader {
-        id: s12Button
+        id: toS12Button
         source: "CButton1.qml"
         anchors.topMargin: 0
         anchors.horizontalCenter: parent.horizontalCenter
-        anchors.top: s11Button.top
+        anchors.top: toS11Button.top
 
         onLoaded: {
             item.texts = "最寄"
@@ -104,12 +104,12 @@ Rectangle {
     }
 
     Loader {
-        id: s13Button
+        id: toS13Button
         source: "CButton1.qml"
         anchors.topMargin: 0
         anchors.rightMargin: 30
         anchors.right: parent.right
-        anchors.top: s11Button.top
+        anchors.top: toS11Button.top
 
         onLoaded: {
             item.texts = "自宅\nお気に入り"
@@ -141,7 +141,7 @@ Rectangle {
     }
 
     Loader {
-        id: s2Button
+        id: toS2Button
         source: "CButton2.qml"
         x: cButton2X2
         y: cButton2Y2
@@ -153,7 +153,7 @@ Rectangle {
     }
 
     Loader {
-        id: s3Button
+        id: toS3Button
         source: "CButton2.qml"
         x: cButton2X3
         y: cButton2Y3
@@ -166,7 +166,7 @@ Rectangle {
 
 
     Loader {
-        id: s1backButton
+        id: s1BackButton
         source: "CBackButton.qml"
         x: backButtonX
         y: backButtonY

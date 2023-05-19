@@ -9,6 +9,7 @@ Rectangle {
     border.width: 3
     border.color: borderColor
     color: baseColor
+    enabled: true
 
     property string baseColor;
     property string borderColor;
@@ -16,6 +17,7 @@ Rectangle {
     property string textColor;
     property string pressedColor;
     property int fontSize: 20
+    property real textOpacity: 1
 
     Loader {
         id: buttonProperty
@@ -33,6 +35,7 @@ Rectangle {
         text: texts
         anchors.fill: parent
         color: textColor
+        opacity: textOpacity
         font.pixelSize: fontSize
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter

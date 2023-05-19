@@ -173,7 +173,7 @@ Rectangle {
     }
 
     Loader {
-        id: s13backButton
+        id: s13BackButton
         source: "CBackButton.qml"
         x: backButtonX
         y: backButtonY

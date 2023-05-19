@@ -11,7 +11,7 @@ Rectangle {
     }
 
     Loader {
-        id: backButton
+        id: s0BackButton
         source: "CBackButton.qml"
         x: 530
         y:320

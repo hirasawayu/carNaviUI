@@ -82,7 +82,7 @@ Rectangle{
     }
 
     Loader {
-        id: s121button
+        id: toS121Button
         source: "CButton4.qml"
         x: cButton4X1
         y: cButton4Y1
@@ -94,7 +94,7 @@ Rectangle{
     }
 
     Loader {
-        id: s122button
+        id: toS122Button
         source: "CButton4.qml"
         x: cButton4X2
         y: cButton4Y2
@@ -106,7 +106,7 @@ Rectangle{
     }
 
     Loader {
-        id: s123button
+        id: toS123Button
         source: "CButton4.qml"
         x: cButton4X3
         y: cButton4Y3
@@ -118,7 +118,7 @@ Rectangle{
     }
 
     Loader {
-        id: s124button
+        id: toS124Button
         source: "CButton4.qml"
         x: cButton4X5
         y: cButton4Y5
@@ -129,7 +129,7 @@ Rectangle{
         }
     }
     Loader {
-        id: s125button
+        id: toS125Button
         source: "CButton4.qml"
         x: cButton4X6
         y: cButton4Y6
@@ -141,7 +141,7 @@ Rectangle{
     }
 
     Loader {
-        id: s126button
+        id: toS126Button
         source: "CButton4.qml"
         x: cButton4X7
         y: cButton4Y7
@@ -173,9 +173,8 @@ Rectangle{
 
         onLoaded: {
             item.texts = "目的地方向"
-            item.baseColor = "lightgrey"
-            item.textColor = "grey"
-            item. pressedColor = "lightgrey"
+            item.textOpacity = 0.2
+            item.enabled = false
         }
     }
 
@@ -187,14 +186,13 @@ Rectangle{
 
         onLoaded: {
             item.texts = "目的地周辺"
-            item.baseColor = "lightgrey"
-            item.textColor = "grey"
-            item. pressedColor = "lightgrey"
+            item.textOpacity = 0.2
+            item.enabled = false
         }
     }
 
     Loader {
-        id: s127Button
+        id: toS127Button
         source: "CButton5.qml"
         x: cButton2X1
         y: cButton2Y1
@@ -206,7 +204,7 @@ Rectangle{
     }
 
     Loader {
-        id: s12backButton
+        id: s12BackButton
         source: "CBackButton.qml"
         x: backButtonX
         y: backButtonY

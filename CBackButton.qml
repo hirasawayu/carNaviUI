@@ -6,6 +6,7 @@ Rectangle {
     width: 150
     height: 60
     color: baseColor
+    enabled: true
 
     radius: 10
     border.width: 3
