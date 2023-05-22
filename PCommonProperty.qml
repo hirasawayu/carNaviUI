@@ -6,4 +6,8 @@ Item {
     property int titleTextY: 0
     property int backButtonX: 530
     property int backButtonY: 320
+    property int previousPageButtonX: 580
+    property int previousPageButtonY: 60
+    property int nextPageButtonX: 580
+    property int nextPageButtonY: 180
 }

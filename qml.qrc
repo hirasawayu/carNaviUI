@@ -33,5 +33,9 @@
         <file>S24.qml</file>
         <file>S25.qml</file>
         <file>S26.qml</file>
+        <file>S31.qml</file>
+        <file>CPageChangeButton.qml</file>
+        <file>CButton7.qml</file>
+        <file>PScreenWith4ButtonProperty.qml</file>
     </qresource>
 </RCC>
