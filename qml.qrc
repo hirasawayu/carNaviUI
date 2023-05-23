@@ -44,5 +44,7 @@
         <file>S34.qml</file>
         <file>S34Pg2.qml</file>
         <file>S35.qml</file>
+        <file>S36.qml</file>
+        <file>CButton8.qml</file>
     </qresource>
 </RCC>

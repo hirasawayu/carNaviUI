@@ -1,4 +1,6 @@
 import QtQuick 2.15
+import QtQuick.Timeline 1.0
+import Qt5Compat.GraphicalEffects
 
 Rectangle {
     id: cButton1
@@ -30,7 +32,6 @@ Rectangle {
             texts = buttonProperty.item.texts
             textColor = buttonProperty.item.textColor
             pressedColor = buttonProperty.item.pressedColor
-
         }
     }
 
@@ -45,14 +46,57 @@ Rectangle {
         anchors.topMargin: 100
     }
 
-    Image {
-        id: image
+    Flipable {
+        id: flipableImage
+        y: 100
         width: 100
         height: 100
         anchors.top: parent.top
-        anchors.topMargin: 10
-        source: imageSource
         anchors.horizontalCenter: parent.horizontalCenter
+        anchors.topMargin: 10
+
+        property bool flipped: false
+
+        front: Image {id: frontImage; source: imageSource; anchors.fill: parent}
+        back: Image {id: backImage; source: imageSource; anchors.fill: parent}
+
+        DirectionalBlur {
+            anchors.fill: frontImage
+            source: frontImage
+            angle: 180
+            length: 30
+            samples: 30
+        }
+
+        DirectionalBlur {
+            anchors.fill: backImage
+            source: backImage
+            angle: 180
+            length: 30
+            samples: 30
+        }
+    }
+
+    Timeline {
+        id: flipTimeline
+        animations: [
+            TimelineAnimation {
+                id:timelineAnimation
+                property: "currentFrame"
+                duration: 2000
+                running: false
+                to: 2000
+                from: 0
+            }
+        ]
+
+        startFrame: 0
+        endFrame: 2000
+        enabled: true
+
+        KeyframeGroup {
+
+        }
 
     }
 
@@ -62,6 +106,6 @@ Rectangle {
         onClicked: screenLoader.source = fileName
         onPressed: parent.color = pressedColor
         onExited: parent.color = baseColor
+        onEntered: parent.color = pressedColor
     }
-
 }

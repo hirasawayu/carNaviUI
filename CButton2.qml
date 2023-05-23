@@ -48,6 +48,7 @@ Rectangle {
         onClicked: screenLoader.source = fileName
         onPressed: parent.color = pressedColor
         onExited: parent.color = baseColor
+        onEntered: parent.color = pressedColor
     }
 
 }

@@ -1,24 +1,25 @@
 import QtQuick 2.15
 
 Rectangle {
-    id: cButton7
+    id: cButton1
     visible: true
-    width: 550
-    height: 50
+    width: 150
+    height: 180
     radius: 10
+    color: baseColor
     border.width: 3
     border.color: borderColor
-    color: baseColor
     enabled: true
 
-    property string fileName;
+    signal selected
+
     property string baseColor;
     property string borderColor;
     property string texts;
     property string textColor;
     property string pressedColor;
-    property int fontSize: 25
     property real textOpacity: 1
+    property string buttonCircleColor: "black"
 
     Loader {
         id: buttonProperty
@@ -37,16 +38,35 @@ Rectangle {
         anchors.fill: parent
         color: textColor
         opacity: textOpacity
-        font.pixelSize: fontSize
-        horizontalAlignment: Text.AlignLeft
+        font.pixelSize: 30
+        horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
-        anchors.leftMargin: 20
     }
 
     MouseArea {
+        id: cButton8MA
         anchors.fill: parent
-        onClicked: screenLoader.source = fileName
         onPressed: parent.color = pressedColor
         onExited: parent.color = baseColor
+        onEntered: parent.color = pressedColor
+        onClicked: {
+            buttonCircleColor = "orange"
+            selected()
+        }
+    }
+
+    Rectangle {
+        id: rectangle
+        width: 30
+        height: 30
+        color: buttonCircleColor
+        border.width: 2
+        border.color: borderColor
+        radius: width / 2
+        anchors.left: parent.left
+        anchors.top: parent.top
+        anchors.leftMargin: 10
+        anchors.topMargin: 10
     }
 }
+

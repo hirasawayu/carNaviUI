@@ -48,6 +48,7 @@ Rectangle {
         onClicked: screenLoader.source = parent.fileName
         onPressed: cBackButton.color = pressedColor
         onExited: cBackButton.color = baseColor
+        onEntered: parent.color = pressedColor
     }
 
 }

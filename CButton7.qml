@@ -1,7 +1,7 @@
 import QtQuick 2.15
 
 Rectangle {
-    id: cButton6
+    id: cButton7
     visible: true
     width: 550
     height: 50
@@ -48,5 +48,6 @@ Rectangle {
         onClicked: screenLoader.source = fileName
         onPressed: parent.color = pressedColor
         onExited: parent.color = baseColor
+        onEntered: parent.color = pressedColor
     }
 }
