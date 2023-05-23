@@ -37,5 +37,12 @@
         <file>CPageChangeButton.qml</file>
         <file>CButton7.qml</file>
         <file>PScreenWith4ButtonProperty.qml</file>
+        <file>S32.qml</file>
+        <file>CPageNumberText.qml</file>
+        <file>S32Pg2.qml</file>
+        <file>S33.qml</file>
+        <file>S34.qml</file>
+        <file>S34Pg2.qml</file>
+        <file>S35.qml</file>
     </qresource>
 </RCC>

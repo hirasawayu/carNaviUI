@@ -10,4 +10,6 @@ Item {
     property int previousPageButtonY: 60
     property int nextPageButtonX: 580
     property int nextPageButtonY: 180
+    property int pageNumberTextX: 600
+    property int pageNumberTextY: 5
 }
